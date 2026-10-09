@@ -452,7 +452,7 @@ export default function App() {
 
   async function requestServer(payload: Record<string, string>, signal?: AbortSignal) {
     if (!xorKey) {
-      throw new Error('مفتاح XOR غير مهيأ. يرجى إعداد EXPO_PUBLIC_XOR_KEY في ملف mobile/.env.');
+      throw new Error('مفتاح XOR غير مهيأ. يرجى إعداد EXPO_PUBLIC_XOR_KEY في ملف android/.env.');
     }
 
     const controller = new AbortController();
