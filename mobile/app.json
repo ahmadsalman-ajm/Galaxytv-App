@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Galaxy TV",
+    "slug": "galaxy-tv",
+    "version": "1.01",
+    "orientation": "landscape",
+    "icon": "./assets/galaxy-app-icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.galaxytv",
+      "infoPlist": {
+        "NSHumanReadableCopyright": "© 2026 Galaxy TV. جميع الحقوق محفوظة."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#080713",
+        "foregroundImage": "./assets/galaxy-adaptive-foreground.png"
+      },
+      "versionCode": 7,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.galaxytv"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-video",
+      "expo-secure-store",
+      "./plugins/withAndroidTv",
+      "./plugins/withIptvNetwork",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#080713",
+          "image": "./assets/galaxy-logo-transparent.png",
+          "imageWidth": 300,
+          "resizeMode": "contain"
+        }
+      ]
+    ]
+  }
+}
